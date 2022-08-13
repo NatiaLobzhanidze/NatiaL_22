@@ -21,7 +21,7 @@ extension ViewController {
     func configureCollectionView()-> UICollectionView {
         
         let myListLayout = UICollectionViewFlowLayout()
-        myListLayout.itemSize = CGSize(width: UIScreen.main.bounds.width - 50, height: 330)
+        myListLayout.itemSize = CGSize(width: UIScreen.main.bounds.width - 50, height: 380)
         myListLayout.minimumLineSpacing = 1
         myListLayout.sectionHeadersPinToVisibleBounds = true
 

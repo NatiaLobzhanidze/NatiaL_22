@@ -19,7 +19,7 @@ class MovieListCollectionViewCell: UICollectionViewCell {
     
     lazy var movieTitle: UILabel = {
           let label = UILabel()
-        label.text = "Harry Potter and Monster"
+//        label.text = "Harry Potter and Monster"
         label.numberOfLines = 0
           label.textColor = UIColor.blue
           label.font = UIFont.systemFont(ofSize: 14)
@@ -66,7 +66,6 @@ class MovieListCollectionViewCell: UICollectionViewCell {
         let imageUrl = "https://image.tmdb.org/t/p/original"+item.poster_path!
         movieTitle.text = item.name
         movieGenre.text = "\(item.genre_ids)"
-        
         moviePoster.load(url: URL(string: imageUrl)!)
    }
 }
