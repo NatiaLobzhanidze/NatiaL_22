@@ -13,6 +13,13 @@
 		60746CCC28A79002003A5BFB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60746CCA28A79002003A5BFB /* Main.storyboard */; };
 		60746CCE28A79003003A5BFB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60746CCD28A79003003A5BFB /* Assets.xcassets */; };
 		60746CD128A79003003A5BFB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60746CCF28A79003003A5BFB /* LaunchScreen.storyboard */; };
+		60746CDE28A7A2D0003A5BFB /* MovieListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60746CDD28A7A2D0003A5BFB /* MovieListCollectionViewCell.swift */; };
+		60746CE028A7A3B5003A5BFB /* AddConstraintsToCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60746CDF28A7A3B5003A5BFB /* AddConstraintsToCollectionView.swift */; };
+		60746CE228A7A84C003A5BFB /* CollViewDataSAndDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60746CE128A7A84C003A5BFB /* CollViewDataSAndDelegate.swift */; };
+		60746CE528A7AAED003A5BFB /* ConfigureCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60746CE428A7AAED003A5BFB /* ConfigureCollectionView.swift */; };
+		60746CEE28A7ACAC003A5BFB /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60746CED28A7ACAC003A5BFB /* APIManager.swift */; };
+		60746CF028A7AF1E003A5BFB /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60746CEF28A7AF1E003A5BFB /* Result.swift */; };
+		60746CF228A7B1DA003A5BFB /* AddConstraintsToViewElements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60746CF128A7B1DA003A5BFB /* AddConstraintsToViewElements.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +31,13 @@
 		60746CCD28A79003003A5BFB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		60746CD028A79003003A5BFB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		60746CD228A79003003A5BFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		60746CDD28A7A2D0003A5BFB /* MovieListCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListCollectionViewCell.swift; sourceTree = "<group>"; };
+		60746CDF28A7A3B5003A5BFB /* AddConstraintsToCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddConstraintsToCollectionView.swift; sourceTree = "<group>"; };
+		60746CE128A7A84C003A5BFB /* CollViewDataSAndDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollViewDataSAndDelegate.swift; sourceTree = "<group>"; };
+		60746CE428A7AAED003A5BFB /* ConfigureCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigureCollectionView.swift; sourceTree = "<group>"; };
+		60746CED28A7ACAC003A5BFB /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		60746CEF28A7AF1E003A5BFB /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		60746CF128A7B1DA003A5BFB /* AddConstraintsToViewElements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddConstraintsToViewElements.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +70,86 @@
 		60746CC328A79002003A5BFB /* NatiaL_22 */ = {
 			isa = PBXGroup;
 			children = (
-				60746CC428A79002003A5BFB /* AppDelegate.swift */,
-				60746CC628A79002003A5BFB /* SceneDelegate.swift */,
-				60746CC828A79002003A5BFB /* ViewController.swift */,
+				60746CE628A7AB2E003A5BFB /* SourceFiles */,
+				60746CEB28A7AC74003A5BFB /* Models */,
+				60746CE728A7AB3D003A5BFB /* Scenes */,
 				60746CCA28A79002003A5BFB /* Main.storyboard */,
 				60746CCD28A79003003A5BFB /* Assets.xcassets */,
 				60746CCF28A79003003A5BFB /* LaunchScreen.storyboard */,
 				60746CD228A79003003A5BFB /* Info.plist */,
 			);
 			path = NatiaL_22;
+			sourceTree = "<group>";
+		};
+		60746CE328A7AAD4003A5BFB /* MovieListCollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				60746CEA28A7AB87003A5BFB /* CollectionViewCell */,
+				60746CDF28A7A3B5003A5BFB /* AddConstraintsToCollectionView.swift */,
+				60746CE428A7AAED003A5BFB /* ConfigureCollectionView.swift */,
+				60746CE128A7A84C003A5BFB /* CollViewDataSAndDelegate.swift */,
+			);
+			path = MovieListCollectionView;
+			sourceTree = "<group>";
+		};
+		60746CE628A7AB2E003A5BFB /* SourceFiles */ = {
+			isa = PBXGroup;
+			children = (
+				60746CC428A79002003A5BFB /* AppDelegate.swift */,
+				60746CC628A79002003A5BFB /* SceneDelegate.swift */,
+			);
+			path = SourceFiles;
+			sourceTree = "<group>";
+		};
+		60746CE728A7AB3D003A5BFB /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				60746CEC28A7AC90003A5BFB /* APIManager */,
+				60746CE828A7AB47003A5BFB /* MovieList */,
+				60746CE928A7AB4E003A5BFB /* MovieDetails */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		60746CE828A7AB47003A5BFB /* MovieList */ = {
+			isa = PBXGroup;
+			children = (
+				60746CC828A79002003A5BFB /* ViewController.swift */,
+				60746CE328A7AAD4003A5BFB /* MovieListCollectionView */,
+			);
+			path = MovieList;
+			sourceTree = "<group>";
+		};
+		60746CE928A7AB4E003A5BFB /* MovieDetails */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MovieDetails;
+			sourceTree = "<group>";
+		};
+		60746CEA28A7AB87003A5BFB /* CollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				60746CDD28A7A2D0003A5BFB /* MovieListCollectionViewCell.swift */,
+				60746CF128A7B1DA003A5BFB /* AddConstraintsToViewElements.swift */,
+			);
+			path = CollectionViewCell;
+			sourceTree = "<group>";
+		};
+		60746CEB28A7AC74003A5BFB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				60746CEF28A7AF1E003A5BFB /* Result.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		60746CEC28A7AC90003A5BFB /* APIManager */ = {
+			isa = PBXGroup;
+			children = (
+				60746CED28A7ACAC003A5BFB /* APIManager.swift */,
+			);
+			path = APIManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +223,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60746CF028A7AF1E003A5BFB /* Result.swift in Sources */,
+				60746CF228A7B1DA003A5BFB /* AddConstraintsToViewElements.swift in Sources */,
+				60746CEE28A7ACAC003A5BFB /* APIManager.swift in Sources */,
 				60746CC928A79002003A5BFB /* ViewController.swift in Sources */,
+				60746CE028A7A3B5003A5BFB /* AddConstraintsToCollectionView.swift in Sources */,
+				60746CDE28A7A2D0003A5BFB /* MovieListCollectionViewCell.swift in Sources */,
 				60746CC528A79002003A5BFB /* AppDelegate.swift in Sources */,
 				60746CC728A79002003A5BFB /* SceneDelegate.swift in Sources */,
+				60746CE528A7AAED003A5BFB /* ConfigureCollectionView.swift in Sources */,
+				60746CE228A7A84C003A5BFB /* CollViewDataSAndDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
