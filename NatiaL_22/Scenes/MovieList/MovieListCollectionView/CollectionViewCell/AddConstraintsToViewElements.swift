@@ -15,10 +15,12 @@ extension MovieListCollectionViewCell {
         
         NSLayoutConstraint.activate([
             moviePoster.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 10),
-            moviePoster.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 20),
-            moviePoster.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -20),
+            moviePoster.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 50),
+            moviePoster.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -50),
+            
            // moviePoster.widthAnchor.constraint(equalToConstant: 190),
-            moviePoster.heightAnchor.constraint(equalToConstant: 200),
+            
+            moviePoster.heightAnchor.constraint(equalToConstant: 250),
             movieTitle.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 20),
             
             movieTitle.topAnchor.constraint(equalTo: moviePoster.bottomAnchor, constant: 20),

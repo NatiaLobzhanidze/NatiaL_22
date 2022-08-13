@@ -9,7 +9,7 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    var movieList = [Result]()
+    var movieList = [FatchedMovies]()
     var apiManager = APIManager()
   lazy var collectionView: UICollectionView = {
         return configureCollectionView()
@@ -21,10 +21,19 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = .lightGray
         AddCollectionView()
-       // networkCall()
-        apiManager.getData()
+       networkCall()
+        
     }
 
+    func networkCall(){
+        apiManager.getData(urlString: "https://api.themoviedb.org/3/tv/top_rated?") { (res: ResultResponse ) in
+            DispatchQueue.main.async {
+                self.movieList = res.results
+                self.collectionView.reloadData()
+            }
+            
+        }
+    }
         }
   
 

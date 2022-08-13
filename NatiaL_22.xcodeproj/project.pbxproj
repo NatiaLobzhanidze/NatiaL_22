@@ -18,7 +18,7 @@
 		60746CE228A7A84C003A5BFB /* CollViewDataSAndDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60746CE128A7A84C003A5BFB /* CollViewDataSAndDelegate.swift */; };
 		60746CE528A7AAED003A5BFB /* ConfigureCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60746CE428A7AAED003A5BFB /* ConfigureCollectionView.swift */; };
 		60746CEE28A7ACAC003A5BFB /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60746CED28A7ACAC003A5BFB /* APIManager.swift */; };
-		60746CF028A7AF1E003A5BFB /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60746CEF28A7AF1E003A5BFB /* Result.swift */; };
+		60746CF028A7AF1E003A5BFB /* FatchedMovies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60746CEF28A7AF1E003A5BFB /* FatchedMovies.swift */; };
 		60746CF228A7B1DA003A5BFB /* AddConstraintsToViewElements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60746CF128A7B1DA003A5BFB /* AddConstraintsToViewElements.swift */; };
 /* End PBXBuildFile section */
 
@@ -36,7 +36,7 @@
 		60746CE128A7A84C003A5BFB /* CollViewDataSAndDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollViewDataSAndDelegate.swift; sourceTree = "<group>"; };
 		60746CE428A7AAED003A5BFB /* ConfigureCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigureCollectionView.swift; sourceTree = "<group>"; };
 		60746CED28A7ACAC003A5BFB /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
-		60746CEF28A7AF1E003A5BFB /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		60746CEF28A7AF1E003A5BFB /* FatchedMovies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FatchedMovies.swift; sourceTree = "<group>"; };
 		60746CF128A7B1DA003A5BFB /* AddConstraintsToViewElements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddConstraintsToViewElements.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -139,7 +139,7 @@
 		60746CEB28A7AC74003A5BFB /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				60746CEF28A7AF1E003A5BFB /* Result.swift */,
+				60746CEF28A7AF1E003A5BFB /* FatchedMovies.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -223,7 +223,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				60746CF028A7AF1E003A5BFB /* Result.swift in Sources */,
+				60746CF028A7AF1E003A5BFB /* FatchedMovies.swift in Sources */,
 				60746CF228A7B1DA003A5BFB /* AddConstraintsToViewElements.swift in Sources */,
 				60746CEE28A7ACAC003A5BFB /* APIManager.swift in Sources */,
 				60746CC928A79002003A5BFB /* ViewController.swift in Sources */,

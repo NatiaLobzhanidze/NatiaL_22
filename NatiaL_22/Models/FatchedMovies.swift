@@ -9,13 +9,13 @@ import Foundation
 import UIKit
 struct ResultResponse: Codable {
     
-    var results: [Result]
+    var results: [FatchedMovies]
 
 }
 
 
-struct Result: Codable {
-    let poster_path : String
+struct FatchedMovies: Codable {
+    let poster_path : String?
     let name: String
     let genre_ids: [Int]
     
