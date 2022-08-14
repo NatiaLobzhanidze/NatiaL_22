@@ -10,6 +10,8 @@ import UIKit
 class ViewController: UIViewController {
     
     var movieList = [FatchedMovies]()
+    var movieGenre = [MovieGenre]()
+    
     var apiManager = APIManager()
   lazy var collectionView: UICollectionView = {
         return configureCollectionView()
@@ -26,13 +28,20 @@ class ViewController: UIViewController {
     }
 
     func networkCall(){
+        apiManager.getData(urlString: "https://api.themoviedb.org/3/genre/movie/list?") { (result: GanreResponse) in
+            DispatchQueue.main.async {
+                self.movieGenre = result.genres
+            }
+           
+        }
         apiManager.getData(urlString: "https://api.themoviedb.org/3/tv/top_rated?") { (res: ResultResponse ) in
             DispatchQueue.main.async {
                 self.movieList = res.results
                 self.collectionView.reloadData()
             }
-            
+
         }
+        
     }
         }
   

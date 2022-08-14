@@ -12,28 +12,15 @@ extension MovieListCollectionViewCell {
     
     func addConstraintsToViews() {
         //image
+        moviePoster.anchor(top: contentView.topAnchor, left: contentView.leftAnchor, bottom: nil, right: contentView.rightAnchor, paddingTop: 10, paddingLeft: 30, paddingBottom: 0, paddingRight: 30, width: nil, height: 250)
         
-        NSLayoutConstraint.activate([
-            moviePoster.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 10),
-            moviePoster.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 50),
-            moviePoster.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -50),
-            
-           // moviePoster.widthAnchor.constraint(equalToConstant: 190),
-            
-            moviePoster.heightAnchor.constraint(equalToConstant: 250),
-            movieTitle.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 20),
-            
-            movieTitle.topAnchor.constraint(equalTo: moviePoster.bottomAnchor, constant: 20),
-            movieTitle.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -20),
-//            movieTitle.widthAnchor.constraint(equalToConstant: 100),
-            movieTitle.bottomAnchor.constraint(equalTo: movieGenre.topAnchor, constant: -10),
-            
-            movieGenre.leadingAnchor.constraint(equalTo: movieTitle.leadingAnchor),
-            movieGenre.trailingAnchor.constraint(equalTo: movieTitle.trailingAnchor),
-            movieGenre.heightAnchor.constraint(equalToConstant: 35),
-            movieGenre.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -10)
-           
-        ])
+        
+        //movieTitle
+        movieTitle.anchor(top: moviePoster.bottomAnchor, left: contentView.leftAnchor, bottom: movieGenre.topAnchor, right: contentView.rightAnchor, paddingTop: 20, paddingLeft: 20, paddingBottom: 10, paddingRight: 20, width: nil, height: nil)
+        
+        //movieGenre
+        movieGenre.anchor(top: nil, left: contentView.leftAnchor, bottom: contentView.bottomAnchor, right: contentView.rightAnchor, paddingTop: 0, paddingLeft: 20, paddingBottom: 10, paddingRight: 20, width: nil, height: 35)
+        
         
     }
     

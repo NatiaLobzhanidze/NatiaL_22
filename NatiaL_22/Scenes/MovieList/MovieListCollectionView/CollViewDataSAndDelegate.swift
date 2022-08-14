@@ -16,10 +16,24 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellid, for: indexPath) as! MovieListCollectionViewCell
-        cell.configure(with: movieList[indexPath.row])
+        let genres = findGenre(from: movieList[indexPath.row].genre_ids)
+        cell.configure(with: movieList[indexPath.row], genre: genres)
             return cell
         
        
+    }
+    
+    func findGenre(from movieId: [Int]) -> [String] {
+        var resultArr = [String]()
+        
+        //check if movielists element id == movieIds all element
+        
+       movieGenre.forEach { elem in
+           if movieId.contains(elem.id) {
+               resultArr.append(elem.name)
+           }
+        }
+        return resultArr
     }
     
     

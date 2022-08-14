@@ -20,6 +20,9 @@
 		60746CEE28A7ACAC003A5BFB /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60746CED28A7ACAC003A5BFB /* APIManager.swift */; };
 		60746CF028A7AF1E003A5BFB /* FatchedMovies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60746CEF28A7AF1E003A5BFB /* FatchedMovies.swift */; };
 		60746CF228A7B1DA003A5BFB /* AddConstraintsToViewElements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60746CF128A7B1DA003A5BFB /* AddConstraintsToViewElements.swift */; };
+		60746CF628A7FE06003A5BFB /* NSLAyoutConstExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60746CF528A7FE06003A5BFB /* NSLAyoutConstExtensions.swift */; };
+		60746CF828A94C54003A5BFB /* bin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60746CF728A94C54003A5BFB /* bin.swift */; };
+		60746CFA28A94F3A003A5BFB /* MoivieGenre.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60746CF928A94F3A003A5BFB /* MoivieGenre.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +41,9 @@
 		60746CED28A7ACAC003A5BFB /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		60746CEF28A7AF1E003A5BFB /* FatchedMovies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FatchedMovies.swift; sourceTree = "<group>"; };
 		60746CF128A7B1DA003A5BFB /* AddConstraintsToViewElements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddConstraintsToViewElements.swift; sourceTree = "<group>"; };
+		60746CF528A7FE06003A5BFB /* NSLAyoutConstExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSLAyoutConstExtensions.swift; sourceTree = "<group>"; };
+		60746CF728A94C54003A5BFB /* bin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bin.swift; sourceTree = "<group>"; };
+		60746CF928A94F3A003A5BFB /* MoivieGenre.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoivieGenre.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +77,7 @@
 			isa = PBXGroup;
 			children = (
 				60746CE628A7AB2E003A5BFB /* SourceFiles */,
+				60746CF528A7FE06003A5BFB /* NSLAyoutConstExtensions.swift */,
 				60746CEB28A7AC74003A5BFB /* Models */,
 				60746CE728A7AB3D003A5BFB /* Scenes */,
 				60746CCA28A79002003A5BFB /* Main.storyboard */,
@@ -140,6 +147,7 @@
 			isa = PBXGroup;
 			children = (
 				60746CEF28A7AF1E003A5BFB /* FatchedMovies.swift */,
+				60746CF928A94F3A003A5BFB /* MoivieGenre.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -148,6 +156,7 @@
 			isa = PBXGroup;
 			children = (
 				60746CED28A7ACAC003A5BFB /* APIManager.swift */,
+				60746CF728A94C54003A5BFB /* bin.swift */,
 			);
 			path = APIManager;
 			sourceTree = "<group>";
@@ -225,11 +234,14 @@
 			files = (
 				60746CF028A7AF1E003A5BFB /* FatchedMovies.swift in Sources */,
 				60746CF228A7B1DA003A5BFB /* AddConstraintsToViewElements.swift in Sources */,
+				60746CF628A7FE06003A5BFB /* NSLAyoutConstExtensions.swift in Sources */,
 				60746CEE28A7ACAC003A5BFB /* APIManager.swift in Sources */,
 				60746CC928A79002003A5BFB /* ViewController.swift in Sources */,
+				60746CF828A94C54003A5BFB /* bin.swift in Sources */,
 				60746CE028A7A3B5003A5BFB /* AddConstraintsToCollectionView.swift in Sources */,
 				60746CDE28A7A2D0003A5BFB /* MovieListCollectionViewCell.swift in Sources */,
 				60746CC528A79002003A5BFB /* AppDelegate.swift in Sources */,
+				60746CFA28A94F3A003A5BFB /* MoivieGenre.swift in Sources */,
 				60746CC728A79002003A5BFB /* SceneDelegate.swift in Sources */,
 				60746CE528A7AAED003A5BFB /* ConfigureCollectionView.swift in Sources */,
 				60746CE228A7A84C003A5BFB /* CollViewDataSAndDelegate.swift in Sources */,

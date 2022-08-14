@@ -62,10 +62,10 @@ class MovieListCollectionViewCell: UICollectionViewCell {
         addConstraintsToViews()
     }
     
-    func configure(with item: FatchedMovies) {
+    func configure(with item: FatchedMovies, genre: [String]) {
         let imageUrl = "https://image.tmdb.org/t/p/original"+item.poster_path!
         movieTitle.text = item.name
-        movieGenre.text = "\(item.genre_ids)"
+        movieGenre.text = genre.joined(separator: ",")
         moviePoster.load(url: URL(string: imageUrl)!)
    }
 }

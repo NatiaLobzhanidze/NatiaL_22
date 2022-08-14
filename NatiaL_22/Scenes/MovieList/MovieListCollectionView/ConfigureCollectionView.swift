@@ -12,8 +12,8 @@ extension ViewController {
     
     func AddCollectionView() {
         self.view.addSubview(collectionView)
-       collectionView.delegate = self
-       collectionView.dataSource = self
+        collectionView.delegate = self
+        collectionView.dataSource = self
         collectionView.register(MovieListCollectionViewCell.self, forCellWithReuseIdentifier: cellid)
         addConstraintsToCollectionV()
     }
@@ -24,13 +24,13 @@ extension ViewController {
         myListLayout.itemSize = CGSize(width: UIScreen.main.bounds.width - 50, height: 380)
         myListLayout.minimumLineSpacing = 1
         myListLayout.sectionHeadersPinToVisibleBounds = true
-
+        
         let myListView = UICollectionView(frame: .zero, collectionViewLayout: myListLayout)
         myListView.translatesAutoresizingMaskIntoConstraints = false
         myListView.bounces = false
         myListView.alwaysBounceVertical = false
         myListView.showsVerticalScrollIndicator = true
-       
+        
         return myListView
     }
 }
