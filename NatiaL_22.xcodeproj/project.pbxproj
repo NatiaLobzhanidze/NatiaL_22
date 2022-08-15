@@ -23,6 +23,7 @@
 		60746CF628A7FE06003A5BFB /* NSLAyoutConstExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60746CF528A7FE06003A5BFB /* NSLAyoutConstExtensions.swift */; };
 		60746CF828A94C54003A5BFB /* bin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60746CF728A94C54003A5BFB /* bin.swift */; };
 		60746CFA28A94F3A003A5BFB /* MoivieGenre.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60746CF928A94F3A003A5BFB /* MoivieGenre.swift */; };
+		60746D0528AA506B003A5BFB /* MovieDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60746D0428AA506B003A5BFB /* MovieDetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		60746CF528A7FE06003A5BFB /* NSLAyoutConstExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSLAyoutConstExtensions.swift; sourceTree = "<group>"; };
 		60746CF728A94C54003A5BFB /* bin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bin.swift; sourceTree = "<group>"; };
 		60746CF928A94F3A003A5BFB /* MoivieGenre.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoivieGenre.swift; sourceTree = "<group>"; };
+		60746D0428AA506B003A5BFB /* MovieDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,7 +115,7 @@
 			children = (
 				60746CEC28A7AC90003A5BFB /* APIManager */,
 				60746CE828A7AB47003A5BFB /* MovieList */,
-				60746CE928A7AB4E003A5BFB /* MovieDetails */,
+				60746D0328AA5046003A5BFB /* MovieDetails */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -125,13 +127,6 @@
 				60746CE328A7AAD4003A5BFB /* MovieListCollectionView */,
 			);
 			path = MovieList;
-			sourceTree = "<group>";
-		};
-		60746CE928A7AB4E003A5BFB /* MovieDetails */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = MovieDetails;
 			sourceTree = "<group>";
 		};
 		60746CEA28A7AB87003A5BFB /* CollectionViewCell */ = {
@@ -159,6 +154,14 @@
 				60746CF728A94C54003A5BFB /* bin.swift */,
 			);
 			path = APIManager;
+			sourceTree = "<group>";
+		};
+		60746D0328AA5046003A5BFB /* MovieDetails */ = {
+			isa = PBXGroup;
+			children = (
+				60746D0428AA506B003A5BFB /* MovieDetailsViewController.swift */,
+			);
+			path = MovieDetails;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -242,6 +245,7 @@
 				60746CDE28A7A2D0003A5BFB /* MovieListCollectionViewCell.swift in Sources */,
 				60746CC528A79002003A5BFB /* AppDelegate.swift in Sources */,
 				60746CFA28A94F3A003A5BFB /* MoivieGenre.swift in Sources */,
+				60746D0528AA506B003A5BFB /* MovieDetailsViewController.swift in Sources */,
 				60746CC728A79002003A5BFB /* SceneDelegate.swift in Sources */,
 				60746CE528A7AAED003A5BFB /* ConfigureCollectionView.swift in Sources */,
 				60746CE228A7A84C003A5BFB /* CollViewDataSAndDelegate.swift in Sources */,

@@ -23,6 +23,11 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource {
        
     }
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let vc = MovieDetailsViewController()
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
     func findGenre(from movieId: [Int]) -> [String] {
         var resultArr = [String]()
         
