@@ -24,6 +24,7 @@
 		60746CF828A94C54003A5BFB /* bin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60746CF728A94C54003A5BFB /* bin.swift */; };
 		60746CFA28A94F3A003A5BFB /* MoivieGenre.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60746CF928A94F3A003A5BFB /* MoivieGenre.swift */; };
 		60746D0528AA506B003A5BFB /* MovieDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60746D0428AA506B003A5BFB /* MovieDetailsViewController.swift */; };
+		60746D0728AA542F003A5BFB /* AddConstraintsToDetailsViewElements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60746D0628AA542F003A5BFB /* AddConstraintsToDetailsViewElements.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		60746CF728A94C54003A5BFB /* bin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bin.swift; sourceTree = "<group>"; };
 		60746CF928A94F3A003A5BFB /* MoivieGenre.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoivieGenre.swift; sourceTree = "<group>"; };
 		60746D0428AA506B003A5BFB /* MovieDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsViewController.swift; sourceTree = "<group>"; };
+		60746D0628AA542F003A5BFB /* AddConstraintsToDetailsViewElements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddConstraintsToDetailsViewElements.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +162,7 @@
 			isa = PBXGroup;
 			children = (
 				60746D0428AA506B003A5BFB /* MovieDetailsViewController.swift */,
+				60746D0628AA542F003A5BFB /* AddConstraintsToDetailsViewElements.swift */,
 			);
 			path = MovieDetails;
 			sourceTree = "<group>";
@@ -236,6 +239,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				60746CF028A7AF1E003A5BFB /* FatchedMovies.swift in Sources */,
+				60746D0728AA542F003A5BFB /* AddConstraintsToDetailsViewElements.swift in Sources */,
 				60746CF228A7B1DA003A5BFB /* AddConstraintsToViewElements.swift in Sources */,
 				60746CF628A7FE06003A5BFB /* NSLAyoutConstExtensions.swift in Sources */,
 				60746CEE28A7ACAC003A5BFB /* APIManager.swift in Sources */,

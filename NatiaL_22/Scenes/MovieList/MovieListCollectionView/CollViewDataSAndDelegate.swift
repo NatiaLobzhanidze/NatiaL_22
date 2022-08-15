@@ -24,7 +24,10 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        guard let imageUrl = movieList[indexPath.row].poster_path, let url = URL(string: "https://image.tmdb.org/t/p/original"+imageUrl) else { return }
+        
         let vc = MovieDetailsViewController()
+        vc.coverImage.load(url: url)
         navigationController?.pushViewController(vc, animated: true)
     }
     
